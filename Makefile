@@ -1,7 +1,6 @@
-all: validate apply
+.PHONY: all tfplan validate apply destroy clean
 
-say_hello:
-	@echo "hello world"
+all: validate apply
 
 tfplan:
 	@echo "generating terraform plan for check"
